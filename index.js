@@ -10,6 +10,7 @@ var lambda = new AWS.Lambda();
 const fnCodeMap = {
   "corpsmap-instrumentation-api.zip": "corpsmap-instrumentation-api",
   "corpsmap-cumulus-api.zip": "corpsmap-cumulus-api",
+  "corpsmap-water-api.zip": "corpsmap-water-api",
 };
 
 // A map of zip files to their associated Lambda Layers
