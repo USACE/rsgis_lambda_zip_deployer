@@ -12,6 +12,7 @@ const fnCodeMap = {
   "corpsmap-cumulus-api.zip": "corpsmap-cumulus-api",
   "corpsmap-water-api.zip": "corpsmap-water-api",
   "corpsmap-shared-api.zip": "corpsmap-shared-api",
+  "consequences-api.zip": "consequences-api"
 };
 
 // A map of zip files to their associated Lambda Layers
