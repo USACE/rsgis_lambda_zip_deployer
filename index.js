@@ -8,7 +8,7 @@ var lambda = new AWS.Lambda();
 // A map of zip files to their associated Lambda Functions
 // Used to update Lambda Function Code
 const fnCodeMap = {
-  "corpsmap-instrumentation-api.zip": "corpsmap-instrumentation-api",
+  "instrumentation-api.zip": "corpsmap-instrumentation-api",
   "corpsmap-cumulus-api.zip": "corpsmap-cumulus-api",
   "corpsmap-water-api.zip": "corpsmap-water-api",
   "corpsmap-shared-api.zip": "corpsmap-shared-api",
@@ -26,6 +26,10 @@ const layerMap = {
     LayerName: "corpsmap-cumulus-geolambda-python",
     CompatibleRuntimes: ["python3.7"],
   },
+  "lambda-layer-oracle-instantclient-18.5.0.0.0.zip": {
+    LayerName: "lambda-layer-oracle-instantclient-185000",
+    CompatibleRuntimes: ["go1.x"]
+  }
 };
 //////////////////////////////////////////////////////////////////////////////
 ////////////////////////// End of Configuration //////////////////////////////
