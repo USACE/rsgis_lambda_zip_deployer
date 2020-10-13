@@ -12,7 +12,8 @@ const fnCodeMap = {
   "corpsmap-cumulus-api.zip": "corpsmap-cumulus-api",
   "corpsmap-water-api.zip": "corpsmap-water-api",
   "corpsmap-shared-api.zip": "corpsmap-shared-api",
-  "consequences-api.zip": "consequences-api"
+  "consequences-api.zip": "consequences-api",
+  "workplan-api.zip": "workplan-api"
 };
 
 // A map of zip files to their associated Lambda Layers
@@ -28,7 +29,7 @@ const layerMap = {
   },
   "lambda-layer-oracle-instantclient-18.5.0.0.0.zip": {
     LayerName: "lambda-layer-oracle-instantclient-185000",
-    CompatibleRuntimes: ["go1.x"]
+    CompatibleRuntimes: ["go1.x"],
   }
 };
 //////////////////////////////////////////////////////////////////////////////
